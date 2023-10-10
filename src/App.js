@@ -1,30 +1,11 @@
-import React , {useEffect , useState} from 'react';
+import React , {useState} from 'react';
 import './App.css';
-import defaultImg from './img/example.png';
-// import dayCloudy from './img/day/Cloudy.png';
-// import dayLightrain from './img/day/Light rain.png';
-// import dayOvercast from './img/day/Overcast.png';
-// import dayPartlyCloudy from './img/day/Partly Cloudy.png';
-// import daySunny from './img/day/Sunny.png';
 
-// import nightCloudy from './img/night/Cloudy.png';
-// import nightlightrain from './img/night/Light rain.png';
-// import nightOvercast from './img/night/Overcast.png';
-// import nightPartlyCloudy from './img/night/Partly Cloudy.png';
-// import nightClear from './img/night/Clear.png';
-
-const key = '60f4bf9f9bb64db8872182516230910';
-
-// const dayCurrImg = {dayCloudy, dayLightrain, dayOvercast , dayPartlyCloudy , daySunny};
-// const nightCurrImg = {nightCloudy, nightlightrain, nightOvercast , nightPartlyCloudy , nightClear};
 
 function App() {
 
-  // const[cityInput , setcity] = useState('Erevan');
+  const key = '60f4bf9f9bb64db8872182516230910';
   const[inputVal , setinputVal] = useState('Erevan');
-  // const[isDay , setisDay] = useState(0);
-  // const[currImage, setcurrImage]= useState(defaultImg)
-
   const[currentInfo , setcuurentInfo]= useState({
     city: '',
     temp: '',
@@ -53,9 +34,7 @@ function App() {
     .catch((err)=>console.log(err))
   }
 
-  useEffect(()=>{
-    ShowWeather()
-  },[])
+  ShowWeather()
 
   return (
     <div className="App">
