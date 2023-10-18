@@ -111,3 +111,10 @@ label {
 legend {
 	display: block;
 }
+
+.example_styles{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
