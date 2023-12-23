@@ -92,7 +92,7 @@ input[type='submit'] {
 	cursor: pointer;
 }
 
-input:focus,
+/* input:focus,
 input:active,
 button:focus,
 button:active {
@@ -130,7 +130,7 @@ legend {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-}
+} */
 .example_styles{
 	display: flex;
 	align-items: center;
